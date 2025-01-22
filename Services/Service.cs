@@ -34,8 +34,14 @@ namespace Zyronaa.SDK.Client.Services
 		protected readonly User User;
 		protected readonly ILocaleCatalog Catalog;
 
-		protected Service(ILogger logger, ITickManager ticks, ICommunicationManager comms, ICommandManager commands, IOverlayManager overlayManager, User user)
-		{
+		protected Service(
+			ILogger logger,
+			ITickManager ticks,
+			ICommunicationManager comms,
+			ICommandManager commands,
+			IOverlayManager overlayManager,
+			User user
+		) {
 			this.Logger = logger;
 			this.Ticks = ticks;
 			this.Comms = comms;
